@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Keyboard from "./components/Keyboard";
+import "./App.css";
 
-function App() {
+const App = () => {
+    let [message, setMessage] = useState("");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="container">
+        <div className="sub-container">
+          <div className="phone">
+            {/* <span class="dot"></span> */}
+            <div className="screen">
+              <textarea
+                value={message}
+                type="text"
+                id="message"
+                placeholder="Type something"
+              />
+            </div>
+            <div className="keyboard">
+              <Keyboard setMessage={setMessage} message={message} />
+            </div>
+          </div>
+        </div>
+        {/* <div className="message-box">
+                    <Messages />
+                </div> */}
+      </div>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,12 @@
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.key {
+    margin: 0.5px;
+    height: 30px;
+    width: 55px;
+    cursor: pointer;
+}
