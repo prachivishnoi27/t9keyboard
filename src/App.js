@@ -8,8 +8,10 @@ const App = () => {
     <div>
       <div className="container">
         <div className="sub-container">
+          <h1>T9 Keyboard</h1>
+          <p>Old Mobile phones keyboard</p>
           <div className="phone">
-            {/* <span class="dot"></span> */}
+            <span class="dot"></span>
             <div className="screen">
               <textarea
                 value={message}
@@ -23,9 +25,6 @@ const App = () => {
             </div>
           </div>
         </div>
-        {/* <div className="message-box">
-                    <Messages />
-                </div> */}
       </div>
     </div>
   );

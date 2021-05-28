@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -7,44 +10,48 @@
 }
 
 .sub-container {
+  color: white;
+  font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   background-color: green;
   width: 400px;
-  height: 400px;
+  height: 100vh;
 }
 
 .phone {
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     align-content: space-around;
     flex-direction: column;
   background-color: rgb(77, 72, 72);
   border-radius: 5%;
-  height: 350px;
+  height: 380px;
   width: 200px;
 }
 
-/* .dot {
-    height: 10px;
-    width: 10px;
-    background-color: #bbb;
+.dot {
+  margin-top: 1rem;
+    height: 8px;
+    width: 8px;
+    background-color: rgb(134, 130, 130);
     border-radius: 50%;
     display: inline-block;
-  } */
+  }
 
 .screen {
     display: flex;
     justify-content: flex-end;
-    margin: 1rem;
+    margin: 0.5rem;
+    margin-bottom: 0;
     background-color: white;
-    height: 120px;
+    height: 150px;
 }
 
 .screen input {
-    font-family: sans-serif;
     font-size: 1rem;
     width: fit-content;
     height: 40px;
@@ -56,61 +63,6 @@
 .keyboard{
     display: flex;
     flex-direction: column;
-    margin: 1rem;
-    margin-top: 0;
-    height: 150px;
-}
-
-.message-box {
-  background-color: bisque;
-  /* max-height: 70vh;
-  max-width: 50rem;
-  margin: 5%;
-  padding: 3%; */
-}
-
-.message-bar {
-  /* padding-top: 5%; */
-}
-
-.message-content {
-  /* margin: 1%; */
-}
-
-.item {
-  /* display: inline-flex; */
-  background-color: orange;
-  /* padding: 1%; */
-}
-
-button {
-  /* display: inline-block;
-  border: none;
-  padding: 1rem 2rem;
-  margin: 0;
-  height: 50px;
-  text-decoration: none;
-  background: orange;
-  color: #ffffff;
-  font-family: sans-serif;
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: center;
-  transition: background 250ms ease-in-out, transform 150ms ease;
-  -webkit-appearance: none;
-  -moz-appearance: none; */
-}
-
-button:hover,
-button:focus {
-  /* background: rgb(218, 158, 46); */
-}
-
-button:focus {
-  /* outline: 1px solid #fff;
-  outline-offset: -4px; */
-}
-
-button:active {
-  /* transform: scale(0.99); */
+    margin: 1rem 1.5rem 0 1.5rem;
+    height: 200px;
 }
